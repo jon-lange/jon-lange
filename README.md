@@ -1,84 +1,123 @@
-# Jon Lange
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img alt="Jon Lange — AI architect. Platforms, evaluation, guardrails. Twelve dots showing the verdict each published claim earned: five failed, five narrowed, two confirmed." src="assets/banner-light.png">
+</picture>
 
-## Senior Director, AI @ Ripple — enterprise AI platforms, and the half of the problem that is knowing when *not* to answer
+**Senior Director, AI @ Ripple.** I turn AI vision into customer-facing features,
+and I care just as much about the teams and processes that make that speed
+sustainable. Most of the work is production discipline — the part that separates
+a system you can put in front of customers from an impressive demo.
 
-I turn AI vision into customer-facing features, and I care just as much about the
-teams and processes that make that speed sustainable. Most of the work is
-production discipline: the part that separates a system you can put in front of
-customers from an impressive demo.
+Before Ripple: eight years at GTreasury through the acquisition, from DevOps
+Analyst to Principal AI Solutions Architect. I built the platform before I built
+the AI on top of it.
 
-Currently leading AI initiatives and Digital Assets within Ripple Treasury's
-Emerging Technology division. Before that, eight years at GTreasury through the
-Ripple acquisition — from DevOps Analyst to Principal AI Solutions Architect,
-which means I built the platform before I built the AI on top of it.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathan-lange-ai-architect/)
-[![not-evidence](https://img.shields.io/badge/not--evidence-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://jon-lange.github.io/not-evidence/)
-
----
-
-### 🛠️ What I work on
-
-- **Enterprise AI architecture** — production-grade GenAI built compliance-first
-- **LLMOps** — secure, scalable model deployment and monitoring
-- **Context engineering** — a six-dimensional framework: data inputs, prompt
-  engineering, model selection, workflow architecture, **evaluation pipelines**,
-  and **continuous monitoring**. Those last two are why the repository below exists
-- **RAG and agent systems** — retrieval pipelines, vector databases, agentic workflows
-- **Platform engineering** — IaC, CI/CD, and the unglamorous foundations underneath
+[![site](https://img.shields.io/badge/jon--lange.github.io-14171A?style=flat-square&logo=github&logoColor=E7E9E3)](https://jon-lange.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathan-lange-ai-architect/)
+[![X](https://img.shields.io/badge/@langej117-14171A?style=flat-square&logo=x&logoColor=E7E9E3)](https://x.com/langej117)
 
 ---
 
-### 🔬 [not-evidence](https://github.com/jon-lange/not-evidence)
+### `~/` what I work on
 
-**Twelve signals that look like evidence and aren't — and the refusal that closes each one.**
+```console
+$ cat ~/context-engineering/dimensions
+1  data inputs
+2  prompt engineering
+3  model selection
+4  workflow architecture
+5  evaluation pipelines       <- measured, 12 specimens
+6  continuous monitoring      <- measured, 12 specimens
 
-The guardrail that refused the obvious attack. The green test that never ran.
-The judge that shares the subject's lineage. The label that says "sanitized."
-Every one is reassuring, every one is routinely accepted as proof, and none is
-evidence of the thing it's taken to prove.
+$ # four of six are assertions. two have receipts.
+```
+
+Enterprise AI architecture built compliance-first · LLMOps · RAG and agent
+systems · IaC, CI/CD and the unglamorous foundations underneath.
+
+---
+
+### `~/` [not-evidence](https://github.com/jon-lange/not-evidence) — twelve signals that look like evidence and aren't
+
+The guardrail that refused the obvious attack. The green test that never ran. The
+judge that shares the subject's lineage. The label that says "sanitized."
 
 Every entry was written as a claim, put in front of real models or a real
-adversary, then rewritten to whatever the evidence supported.
+adversary, then rewritten to whatever came back.
 
-- **Ten of the twelve entries were revised by their own specimens.** Five had
-  their central claim fail, and now argue something different from what they set
-  out to argue.
-- **Twelve runnable specimens.** Four need no API key at all.
-- **No figure appears that was not generated in the repository itself.**
+```console
+$ make check
+  12 patterns · 12 adjudications · 16 derived count claims
+  12 falsification conditions · 208 relative links
+  0 failure(s)
 
-A bounded catalogue — twelve entries, then it's finished.
+$ python3 tools/mutcheck.py --demo
+  redaction works                    CAUGHT
+  rollout flag off                   NOT CAUGHT   <- the assertion was never watching
+  schema change dropped the field    NOT CAUGHT   <- same
+```
 
-| Take this | What it does |
+| | |
 |---|---|
-| [`tools/mutcheck.py`](https://github.com/jon-lange/not-evidence/blob/main/tools/mutcheck.py) | One file, standard library, no dependencies. Proves an assertion *would have failed* before you trust that it passed — `python3 mutcheck.py --demo` |
-| [`skills/`](https://github.com/jon-lange/not-evidence/tree/main/skills) | Five eval checks: judge independence, injection-class coverage, scorecard weight sensitivity, re-identification, test liveness. Each ships with the measurement behind it |
-| [`EVIDENCE.md`](https://github.com/jon-lange/not-evidence/blob/main/EVIDENCE.md) | Every measured figure on one page, each linked to its working |
+| **All twelve measured** | seven survived · five had their central claim fail |
+| **Bounded** | twelve entries, then finished |
+| **No borrowed numbers** | nothing appears that was not generated there |
+
+```bash
+/plugin marketplace add jon-lange/not-evidence   # five eval checks, each with its measurement
+```
+
+<details>
+<summary><b>Why the failures are the point</b></summary>
+
+<br>
+
+A catalogue where everything confirmed would read as confirmation bias, and any
+sharp reader would assume the tests were shaped to pass. The five that failed are
+what make the seven credible.
+
+The comparison worth making is not against a catalogue whose claims all held. It
+is against the usual case, where nobody ran them.
+
+</details>
 
 ---
 
-### 📐 How I publish
+### `~/` [field-tested](https://github.com/jon-lange/field-tested) — building blocks that say how you know they work
+
+```yaml
+proof: measured    # a figure, and the specimen that produced it
+proof: tested      # a runnable test in this repository
+proof: demo        # a runnable demonstration
+proof: unproven    # declared as such, with what would prove it
+```
+
+`unproven` is the load-bearing one. You may publish something you have not
+validated. You may not publish it looking validated. A script enforces it.
+
+Two training modules so far, both about an hour, both needing no API key: **[is
+your eval suite telling the truth](https://github.com/jon-lange/field-tested/tree/main/training/01-evaluation)**
+and **[is your dashboard](https://github.com/jon-lange/field-tested/tree/main/training/02-monitoring)**.
+Each hands you something green that is lying, and asks you to find out how.
+
+---
+
+### `~/` how I publish
 
 Working in a regulated industry usually means publishing nothing. I wrote down
 the discipline that makes it possible instead — six rules, enforced by hooks and
 CI rather than by remembering, including the one that matters most: **no number
 appears that was not generated here.**
 
-It's written down because a method you can inspect is worth more than an
-assurance you have to take on faith.
-
 → **[METHOD.md](https://github.com/jon-lange/not-evidence/blob/main/METHOD.md)**
 
 ---
 
-### 🤝 What I'd like to hear about
+### `~/` what I'd like to hear about
 
 **A result that contradicts one of the twelve.** Every specimen states what would
 falsify it, and a contradicting measurement gets the entry rewritten and you
-credited in it. That's not a courtesy — a catalogue whose claims were only ever
+credited in it. That is not a courtesy — a catalogue whose claims were only ever
 checked by their author is a catalogue of one person's confidence.
 
-And if you're working through what AI can actually do for your business, beyond
-the hype, I'd like to hear about that too.
-
-<sub>Greater Chicago Area · Certified ScrumMaster (CSM) · Certified Scrum Product Owner (CSPO)</sub>
+<sub>Greater Chicago Area · CSM · CSPO · views my own</sub>
