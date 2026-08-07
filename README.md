@@ -29,7 +29,7 @@ $ cat ~/context-engineering/dimensions
 5  evaluation pipelines       <- measured, 12 specimens
 6  continuous monitoring      <- measured, 12 specimens
 
-$ # four of six are assertions. two have receipts.
+$ # all six now carry a module. two measured, four demonstrated.
 ```
 
 Enterprise AI architecture built compliance-first · LLMOps · RAG and agent
@@ -95,10 +95,22 @@ proof: unproven    # declared as such, with what would prove it
 `unproven` is the load-bearing one. You may publish something you have not
 validated. You may not publish it looking validated. A script enforces it.
 
-Two training modules so far, both about an hour, both needing no API key: **[is
-your eval suite telling the truth](https://github.com/jon-lange/field-tested/tree/main/training/01-evaluation)**
-and **[is your dashboard](https://github.com/jon-lange/field-tested/tree/main/training/02-monitoring)**.
-Each hands you something green that is lying, and asks you to find out how.
+Six training modules, one per dimension, 45-60 minutes each and none needing an
+API key. Each hands you something green that is lying and asks you to find out
+how before showing you.
+
+```console
+$ ls training/
+01-evaluation      is your eval suite telling the truth?
+02-monitoring      is your dashboard?
+03-data-inputs     is what reaches the model what you think?
+04-prompting       did your prompt really improve?
+05-model-selection are those two models interchangeable?
+06-workflow        what did your pipeline actually do?
+```
+
+Two are `measured` and four are `demo` — the frontmatter says which, rather than
+letting a full grid imply otherwise.
 
 ---
 
