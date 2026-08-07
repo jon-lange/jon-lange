@@ -22,14 +22,15 @@ the AI on top of it.
 
 ```console
 $ cat ~/context-engineering/dimensions
-1  data inputs
-2  prompt engineering
-3  model selection
-4  workflow architecture
-5  evaluation pipelines       <- measured, 12 specimens
-6  continuous monitoring      <- measured, 12 specimens
+1  data inputs             demonstrated   module 03
+2  prompt engineering      demonstrated   module 04
+3  model selection         demonstrated   module 05
+4  workflow architecture   demonstrated   module 06
+5  evaluation pipelines    measured       module 01 · 12 specimens
+6  continuous monitoring   measured       module 02 · 12 specimens
 
-$ # all six now carry a module. two measured, four demonstrated.
+$ # demonstrated means the failure is real and runnable.
+$ # it does not mean anyone measured how often it happens.
 ```
 
 Enterprise AI architecture built compliance-first · LLMOps · RAG and agent
