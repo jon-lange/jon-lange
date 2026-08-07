@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img alt="Jon Lange — AI architect. Platforms, evaluation, guardrails. Twelve dots showing the verdict each published claim earned: five failed, five narrowed, two confirmed." src="assets/banner-light.png">
+  <img alt="Jon Lange — AI architect. Platforms, evaluation, guardrails. A terminal counting the specimens whose central claim failed: 5 of twelve, and the 5 are why the other 7 are worth anything." src="assets/banner-light.png">
 </picture>
 
 **Senior Director, AI @ Ripple.** I turn AI vision into customer-facing features,
