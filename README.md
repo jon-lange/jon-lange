@@ -10,7 +10,7 @@ Senior Director, AI at Ripple Treasury. These are my personal projects and notes
 
 ### Put your agents to work. Together.
 
-[![Botbench workbench on a desktop and a phone, showing repository work and results to review](https://raw.githubusercontent.com/botbenchhq/botbench/788f0315f0047a8f06d7e9b162473b4b5be44a70/docs/images/hero-workbench.png)](https://botbenchhq.github.io/)
+[![Botbench Home on a desktop and a billing task ready for review on a phone](https://raw.githubusercontent.com/botbenchhq/botbench/32d41cdd4d99972e9119e6a55d8478c38c3c09ae/docs/images/hero-workbench.png)](https://botbenchhq.github.io/)
 
 [Botbench](https://botbenchhq.github.io/) is a local-first workbench for coding
 agents. Delegate repository work to Claude Code or Codex, then review the branch,
