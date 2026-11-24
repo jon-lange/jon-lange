@@ -1,136 +1,49 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img alt="Jon Lange — AI architect. Platforms, evaluation, guardrails. A terminal counting the specimens whose central claim failed: 5 of twelve, and the 5 are why the other 7 are worth anything." src="assets/banner-light.png">
-</picture>
+# Jon Lange
 
-**Senior Director, AI @ Ripple.** I turn AI vision into customer-facing features,
-and I care just as much about the teams and processes that make that speed
-sustainable. Most of the work is production discipline — the part that separates
-a system you can put in front of customers from an impressive demo.
+**I build AI products and the systems that help teams ship them.**
 
-Before Ripple: eight years at GTreasury through the acquisition, from DevOps
-Analyst to Principal AI Solutions Architect. I built the platform before I built
-the AI on top of it.
+Senior Director, AI at Ripple Treasury. These are my personal projects and notes.
 
-[![site](https://img.shields.io/badge/jon--lange.github.io-14171A?style=flat-square&logo=github&logoColor=E7E9E3)](https://jon-lange.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathan-lange-ai-architect/)
-[![X](https://img.shields.io/badge/@langej117-14171A?style=flat-square&logo=x&logoColor=E7E9E3)](https://x.com/langej117)
+[Website](https://jon-lange.github.io/) · [LinkedIn](https://www.linkedin.com/in/jonathan-lange-ai-architect/) · [X](https://x.com/langej117)
 
----
+## Building Botbench
 
-### `~/` what I work on
+### Put your agents to work. Together.
 
-```console
-$ cat ~/context-engineering/dimensions
-1  data inputs             demonstrated   module 03
-2  prompt engineering      demonstrated   module 04
-3  model selection         demonstrated   module 05
-4  workflow architecture   demonstrated   module 06
-5  evaluation pipelines    measured       module 01 · 12 specimens
-6  continuous monitoring   measured       module 02 · 12 specimens
+[![Botbench workbench on a desktop and a phone, showing repository work and results to review](https://raw.githubusercontent.com/botbenchhq/botbench/788f0315f0047a8f06d7e9b162473b4b5be44a70/docs/images/hero-workbench.png)](https://botbenchhq.github.io/)
 
-$ # demonstrated means the failure is real and runnable.
-$ # it does not mean anyone measured how often it happens.
-```
+[Botbench](https://botbenchhq.github.io/) is a local-first workbench for coding
+agents. Delegate repository work to Claude Code or Codex, then review the branch,
+diff, and checks. Each task gets its own worktree. You choose the approval mode.
 
-Enterprise AI architecture built compliance-first · LLMOps · RAG and agent
-systems · IaC, CI/CD and the unglamorous foundations underneath.
+For teams, workbenches can show overlapping work and exchange questions and
+answers approved by their owners. Autonomous coordination across developers is
+still in development.
 
----
+**[Explore Botbench](https://botbenchhq.github.io/)** ·
+[Get started](https://botbenchhq.github.io/get-started.html) ·
+[Source](https://github.com/botbenchhq/botbench)
 
-### `~/` [not-evidence](https://github.com/jon-lange/not-evidence) — twelve signals that look like evidence and aren't
+Early release for macOS.
+[Current capabilities and validation limits](https://github.com/botbenchhq/botbench#what-works-today).
 
-The guardrail that refused the obvious attack. The green test that never ran. The
-judge that shares the subject's lineage. The label that says "sanitized."
+## Supporting work
 
-Every entry was written as a claim, put in front of real models or a real
-adversary, then rewritten to whatever came back.
+- **[Botbench design system](https://github.com/botbenchhq/design-system)** —
+  tokens, components, and UI checks for interfaces built with coding agents.
+- **[A small mutation-test experiment](https://github.com/jon-lange/not-evidence/tree/main/specimens/11-mutation-check)** —
+  three constructed test cases, a deliberately broken redactor, and a runnable
+  demonstration of how a passing assertion can miss a broken redactor.
 
-```console
-$ make check
-  12 patterns · 12 adjudications · 16 derived count claims
-  12 falsification conditions · 208 relative links
-  0 failure(s)
+More work: [AI evaluation teaching labs](https://github.com/jon-lange/field-tested),
+[Settleview](https://github.com/jon-lange/settleview), and
+[notes from my personal agent setup](https://github.com/jon-lange/grok-bot-team).
 
-$ python3 tools/mutcheck.py --demo
-  redaction works                    CAUGHT
-  rollout flag off                   NOT CAUGHT   <- the assertion was never watching
-  schema change dropped the field    NOT CAUGHT   <- same
-```
+## Writing
 
-| | |
-|---|---|
-| **All twelve measured** | seven survived · five had their central claim fail |
-| **Bounded** | twelve entries, then finished |
-| **No borrowed numbers** | nothing appears that was not generated there |
+[When Building Is Free](https://www.linkedin.com/pulse/when-building-free-jonathan-lange-ouk3c)
+— what changes when implementation gets faster and feedback becomes the constraint.
 
-```bash
-/plugin marketplace add jon-lange/not-evidence   # five eval checks, each with its measurement
-```
+**Clear problems. Faster decisions. Better feedback.**
 
-<details>
-<summary><b>Why the failures are the point</b></summary>
-
-<br>
-
-A catalogue where everything confirmed would read as confirmation bias, and any
-sharp reader would assume the tests were shaped to pass. The five that failed are
-what make the seven credible.
-
-The comparison worth making is not against a catalogue whose claims all held. It
-is against the usual case, where nobody ran them.
-
-</details>
-
----
-
-### `~/` [field-tested](https://github.com/jon-lange/field-tested) — building blocks that say how you know they work
-
-```yaml
-proof: measured    # a figure, and the specimen that produced it
-proof: tested      # a runnable test in this repository
-proof: demo        # a runnable demonstration
-proof: unproven    # declared as such, with what would prove it
-```
-
-`unproven` is the load-bearing one. You may publish something you have not
-validated. You may not publish it looking validated. A script enforces it.
-
-Six training modules, one per dimension, 45-60 minutes each and none needing an
-API key. Each hands you something green that is lying and asks you to find out
-how before showing you.
-
-```console
-$ ls training/
-01-evaluation      is your eval suite telling the truth?
-02-monitoring      is your dashboard?
-03-data-inputs     is what reaches the model what you think?
-04-prompting       did your prompt really improve?
-05-model-selection are those two models interchangeable?
-06-workflow        what did your pipeline actually do?
-```
-
-Two are `measured` and four are `demo` — the frontmatter says which, rather than
-letting a full grid imply otherwise.
-
----
-
-### `~/` how I publish
-
-Working in a regulated industry usually means publishing nothing. I wrote down
-the discipline that makes it possible instead — six rules, enforced by hooks and
-CI rather than by remembering, including the one that matters most: **no number
-appears that was not generated here.**
-
-→ **[METHOD.md](https://github.com/jon-lange/not-evidence/blob/main/METHOD.md)**
-
----
-
-### `~/` what I'd like to hear about
-
-**A result that contradicts one of the twelve.** Every specimen states what would
-falsify it, and a contradicting measurement gets the entry rewritten and you
-credited in it. That is not a courtesy — a catalogue whose claims were only ever
-checked by their author is a catalogue of one person's confidence.
-
-<sub>Greater Chicago Area · CSM · CSPO · views my own</sub>
+<sub>Greater Chicago Area · Personal projects and views.</sub>
