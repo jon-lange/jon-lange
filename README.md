@@ -10,9 +10,9 @@ Senior Director, AI at Ripple Treasury. These are my personal projects and notes
 
 ### Your agents. On the same page.
 
-[![Illustrated workflow: LangSpan flags an overlapping edit while unrelated work continues](https://langspan.github.io/assets/product/langspan-overview.svg)](https://langspan.github.io/#team-story)
+[![Illustrated workflow: LangSpan flags an overlapping edit while unrelated work continues](https://langspan.dev/assets/product/langspan-overview.svg)](https://langspan.dev/#team-story)
 
-I'm building [LangSpan](https://langspan.github.io/) to help teams keep building
+I'm building [LangSpan](https://langspan.dev/) to help teams keep building
 together as their agents write more code.
 
 LangSpan gives coding agents a shared view of work in progress and brings
@@ -24,11 +24,11 @@ The aim is less manual relay and avoidable rework while people set direction
 and review the combined result. One developer running several agents can use
 the same tools.
 
-[Explore LangSpan](https://langspan.github.io/) ·
-[See the team story](https://langspan.github.io/#team-story) ·
-[Project organization](https://github.com/Langspan)
+[Explore LangSpan](https://langspan.dev/) ·
+[See the team story](https://langspan.dev/#team-story) ·
+[Source on GitHub](https://github.com/Langspan/LangSpan.dev)
 
-LangSpan is a source preview. The core repository currently requires access.
+LangSpan is a public source preview for macOS and Linux, built from source.
 The website walkthrough is an authored illustration.
 
 ## Supporting work
