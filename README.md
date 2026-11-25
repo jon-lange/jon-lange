@@ -6,29 +6,35 @@ Senior Director, AI at Ripple Treasury. These are my personal projects and notes
 
 [Website](https://jon-lange.github.io/) · [LinkedIn](https://www.linkedin.com/in/jonathan-lange-ai-architect/) · [X](https://x.com/langej117)
 
-## Building Botbench
+## Building LangSpan
 
-### Put your agents to work. Together.
+### Your agents. On the same page.
 
-[![Botbench Home on a desktop and a billing task ready for review on a phone](https://raw.githubusercontent.com/botbenchhq/botbench/32d41cdd4d99972e9119e6a55d8478c38c3c09ae/docs/images/hero-workbench.png)](https://botbenchhq.github.io/)
+[![Illustrated workflow: LangSpan flags an overlapping edit while unrelated work continues](https://langspan.github.io/assets/product/langspan-overview.svg)](https://langspan.github.io/#team-story)
 
-[Botbench](https://botbenchhq.github.io/) is a local-first workbench for coding
-agents. Delegate repository work to Claude Code or Codex, then review the branch,
-diff, and checks. Each task gets its own worktree. You choose the approval mode.
+I'm building [LangSpan](https://langspan.github.io/) to help teams keep building
+together as their agents write more code.
 
-For teams, workbenches can show overlapping work and exchange questions and
-answers approved by their owners. Autonomous coordination across developers is
-still in development.
+LangSpan gives coding agents a shared view of work in progress and brings
+relevant updates into the sessions people already use. It connects through
+native hooks, CLI and MCP, with an optional dashboard for people to inspect
+activity.
 
-**[Explore Botbench](https://botbenchhq.github.io/)** ·
-[Get started](https://botbenchhq.github.io/get-started.html) ·
-[Source](https://github.com/botbenchhq/botbench)
+The aim is less manual relay and avoidable rework while people set direction
+and review the combined result. One developer running several agents can use
+the same tools.
 
-Early release for macOS.
-[Current capabilities and validation limits](https://github.com/botbenchhq/botbench#what-works-today).
+[Explore LangSpan](https://langspan.github.io/) ·
+[See the team story](https://langspan.github.io/#team-story) ·
+[Project organization](https://github.com/Langspan)
+
+LangSpan is a source preview. The core repository currently requires access.
+The website walkthrough is an authored illustration.
 
 ## Supporting work
 
+- **[Botbench](https://botbenchhq.github.io/)** — a local workbench for Claude
+  Code and Codex, with task worktrees and review of branches, diffs and checks.
 - **[Botbench design system](https://github.com/botbenchhq/design-system)** —
   tokens, components, and UI checks for interfaces built with coding agents.
 - **[A small mutation-test experiment](https://github.com/jon-lange/not-evidence/tree/main/specimens/11-mutation-check)** —
