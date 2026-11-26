@@ -8,28 +8,31 @@ Senior Director, AI at Ripple Treasury. These are my personal projects and notes
 
 ## Building LangSpan
 
-### Your agents. On the same page.
+### Run agents in parallel. Build as a team.
 
-[![Illustrated workflow: LangSpan flags an overlapping edit while unrelated work continues](https://langspan.dev/assets/product/langspan-overview.svg)](https://langspan.dev/#team-story)
+Your agents. On the same page.
 
-I'm building [LangSpan](https://langspan.dev/) to help teams keep building
-together as their agents write more code.
+I'm building [LangSpan](https://langspan.dev/), the open-source coordination
+layer for parallel agentic development.
 
-LangSpan gives coding agents a shared view of work in progress and brings
-relevant updates into the sessions people already use. It connects through
-native hooks, CLI and MCP, with an optional dashboard for people to inspect
-activity.
+Running multiple coding agents is only part of the problem. Their changes need
+to work together. Separate branches can merge cleanly and still produce an
+incompatible interface.
 
-The aim is less manual relay and avoidable rework while people set direction
-and review the combined result. One developer running several agents can use
-the same tools.
+LangSpan brings related work into existing agent sessions, coordinates
+supported local edits, tracks session-owned changes and helps verify the
+combined Git tree. It complements Git worktrees and your existing tools.
+People set direction and review the result.
 
-[Explore LangSpan](https://langspan.dev/) ·
-[See the team story](https://langspan.dev/#team-story) ·
+[![Illustrated local workflow: LangSpan flags an overlapping edit while unrelated work continues](https://langspan.dev/assets/product/langspan-overview.svg)](https://langspan.dev/#edit-coordination)
+
+[Explore the product](https://langspan.dev/) ·
+[See the parallel-work illustration](https://langspan.dev/#scale) ·
+[Why a clean merge can break the build](https://langspan.dev/#why) ·
 [Source on GitHub](https://github.com/Langspan/LangSpan.dev)
 
-LangSpan is a public source preview for macOS and Linux, built from source.
-The website walkthrough is an authored illustration.
+LangSpan v0.1.0 is open source and available for macOS and Linux.
+The illustration is not a live recording; reduced rework remains a hypothesis.
 
 ## Supporting work
 
