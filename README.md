@@ -22,18 +22,28 @@ tools for developers whose coding agents work side by side.
 
 <sub>An authored illustration of local coordination, not a session recording.</sub>
 
-[LangSpan](https://langspan.dev/) is the open-source coordination layer for
-parallel agentic development, and my flagship project. Your agents. On the same
-page. Worktrees isolate files, not intent. Keep your existing
-Claude Code and Codex sessions: LangSpan briefs each one on related work,
-refuses supported edits that overlap another session's hold, and helps you
-check the combined result before it lands. Adapters for Cursor, Gemini CLI and
-Antigravity exist but are not yet verified in live sessions.
+Your agents. On the same page. I'm building [LangSpan](https://langspan.dev/),
+the open-source coordination layer for parallel agentic development.
 
-Version 0.1.0 for macOS and Linux.
-[Explore LangSpan](https://langspan.dev/) ·
-[Download 0.1.0](https://github.com/Langspan/LangSpan.dev/releases/tag/v0.1.0) ·
+Running multiple coding agents is only part of the problem. Their changes need
+to work together. Separate branches can merge cleanly and still produce an
+incompatible interface.
+
+LangSpan brings related work into existing agent sessions, coordinates
+supported local edits, tracks session-owned changes and helps verify the
+combined Git tree. It complements Git worktrees and your existing tools.
+People set direction and review the result. Claude Code and Codex are
+supported; adapters for Cursor, Gemini CLI and Antigravity are not yet verified
+in live sessions.
+
+[Explore the product](https://langspan.dev/) ·
+[See the parallel-work illustration](https://langspan.dev/#scale) ·
+[Why a clean merge can break the build](https://langspan.dev/#why) ·
+[Download v0.1.0](https://github.com/Langspan/LangSpan.dev/releases/tag/v0.1.0) ·
 [Source on GitHub](https://github.com/Langspan/LangSpan.dev)
+
+LangSpan v0.1.0 is open source and available for macOS and Linux.
+The illustration is not a live recording; reduced rework remains a hypothesis.
 
 ## Botbench: put your coding agents to work, together
 
