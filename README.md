@@ -8,7 +8,7 @@ tools for developers whose coding agents work side by side.
 **Get in touch:** [LinkedIn](https://www.linkedin.com/in/jonathan-lange-ai-architect/) (best for conversations) ·
 [X](https://x.com/langej117) · [Website](https://jon-lange.github.io/)
 
-## LangSpan: your agents, on the same page
+## LangSpan: run agents in parallel, build as a team
 
 <a href="https://langspan.dev/#edit-coordination">
   <picture>
@@ -23,7 +23,8 @@ tools for developers whose coding agents work side by side.
 <sub>An authored illustration of local coordination, not a session recording.</sub>
 
 [LangSpan](https://langspan.dev/) is the open-source coordination layer for
-parallel agentic development, and my flagship project. Keep your existing
+parallel agentic development, and my flagship project. Your agents. On the same
+page. Worktrees isolate files, not intent. Keep your existing
 Claude Code and Codex sessions: LangSpan briefs each one on related work,
 refuses supported edits that overlap another session's hold, and helps you
 check the combined result before it lands. Adapters for Cursor, Gemini CLI and
